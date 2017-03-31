@@ -865,15 +865,21 @@ class tcS3 {
 
 	public function s3_bucket_region_callback() {
 		$regions = array(
-			array("value" => "ap-northeast-1", "display" => "ap-northeast-1", "options" => ""),
-			array("value" => "ap-southeast-1", "display" => "ap-southeast-1", "options" => ""),
-			array("value" => "ap-southeast-2", "display" => "ap-southeast-2", "options" => ""),
-			array("value" => "eu-west-1", "display" => "eu-west-1", "options" => ""),
-			array("value" => "sa-east-1", "display" => "sa-east-1", "options" => ""),
-			array("value" => "us-east-1", "display" => "us-east-1", "options" => ""),
-			array("value" => "us-west-1", "display" => "us-west-1", "options" => ""),
-			array("value" => "us-west-2", "display" => "us-west-2", "options" => "")
-			);
+                        array("value" => "us-east-1", "display" => "us-east-1", "options" => ""),
+                        array("value" => "us-east-2", "display" => "us-east-2", "options" => ""),
+                        array("value" => "us-west-1", "display" => "us-west-1", "options" => ""),
+                        array("value" => "us-west-2", "display" => "us-west-2", "options" => ""),
+                        array("value" => "ca-central-1", "display" => "ca-central-1", "options" => ""),
+                        array("value" => "ap-south-1", "display" => "ap-south-1", "options" => ""),
+                        array("value" => "ap-northeast-2", "display" => "ap-northeast-2", "options" => ""),
+                        array("value" => "ap-southeast-1", "display" => "ap-southeast-1", "options" => ""),
+                        array("value" => "ap-southeast-2", "display" => "ap-southeast-2", "options" => ""),
+                        array("value" => "ap-northeast-1", "display" => "ap-northeast-1", "options" => ""),
+                        array("value" => "eu-central-1", "display" => "eu-central-1", "options" => ""),
+                        array("value" => "eu-west-1", "display" => "eu-west-1", "options" => ""),
+                        array("value" => "eu-west-2", "display" => "eu-west-2", "options" => ""),
+                        array("value" => "sa-east-1", "display" => "sa-east-1", "options" => "")
+		);
 
 		foreach ($regions as $key => $region) {
 			if ($region["value"] == $this->options["bucket_region"]) {
